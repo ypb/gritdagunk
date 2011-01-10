@@ -1,0 +1,114 @@
+
+"So?!? What kind of Weird is this Gritdagunk? Prontomere?"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+(note to self: "name to be evolved, too?")
+
+Grit "da" Gunk IS the implementation; PROtothetic, ONTOlogy, MEREology
+is an "ideology" behind it.
+
+The  first is a  jive-talk reference  to an  eons old  "what's reality
+ultimately made  of squabble" on  the linguistically novel  grounds of
+mereology and  a play on  duality between properly parted  Gunk[1] and
+atomically part-less grit... or so I gather from the "literature".
+
+The latter, a reference to three formal systems developed by Stanisław
+Leśniewski[2]  around  1930,  then,  a  nominalist  rejection  of  set
+theory. Of  those only the last survived  if only in the  shape of the
+name,  being transformed  by  and resurfacing  in similarly  concerned
+logical  research of  later generations.  Though of  course  the study
+(-logy)  of parts  (meros-) and  their wholes  is probably  as  old as
+thinking  itself is but  it came  to the  acute crisis  of registering
+under specialized name in the beginning of the 20th century and a time
+of pernicious  recurrence of trivial  logical paradoxes at  the lowest
+level of  axiomatizing mathematics. In Leśniewski's  case Ontology was
+calculus of  names (basic logical terms),  accordingly Protothetic was
+calculus  of prepositions  (on  those terms),  Mereology being  higher
+order theory encompassing  those other two in the  sort of calculus of
+classes.
+
+Now, I'm not about implementing  religiously some sort of dead logical
+system from almost  100 years ago, but if at  all the whole Gritdagunk
+endeavor  can  be termed  a sort of  "neural  genetic  mereology" and  if
+mereology is  a sort of  "proto-geometry" of the formal  systems, then
+trying to  "hover" about its  level of abstraction  may be a  trick to
+achieving what I'm envisioning.
+
+---
+
+Hopefully less incoherence: An  overview introduction to  GAlib states
+three  steps in  setting up  a genetic  algorithm solution:  1) decide
+representation  2)  choose  genetic   operators  and  3)  formulate  an
+objective fitness function. Second step, taking the cue from naturally
+occurring  phenomenons, seems to  be the  least controversial,  but the
+other two  are co-dependent and,  while still enabling  exploration of
+large  spaces  of   possible  solutions,  pre-determine  results  with
+external motivations of the human experimenters. In a way one may say:
+"we get out what we program in".
+
+Combining evolutionary strategies  with artificial neural networks has
+shown good results. But two  unresolved aspects of this endeavor have
+limited  them:  on  one  hand  an "optimization"  strain  of  thinking
+inherent  in the  common use  case of  genetic algorithms  has  led to
+"exhaustibley good" solutions and on the other hand paying lip service
+to the  problem of environment, "language" of  its representation ("up"
+from the operators used) being an external axiomatic constraint on the
+possible evolution of the systems,  if at all since "wandering" of the
+animats usually happens "inside" their  space of "heads" in a finitely
+bound   external  territory   with  limited   possibilities   of  them
+influencing  it,  has  not   resulted  in  "explosive"  and  sustained
+evolutionary process.  On the whole it  may be answered  that a reason
+behind  this tendencies  is our  limited processing  power. Permitting
+either the  environment or the  animats to have unbound  complexity is
+difficult enough, but leaving both "undecided" results in a problem so
+open that nothing falls out of it.
+
+In this way  Gritdagunk is an attempt, probably  misguided and doomed to
+similar failure, to *evolve*  representation. In order to achieve this
+and not fall prey to above mentioned issues faced by choosing to leave
+representation   undecided   Gritdagunk   tries  to   embody   following
+principles:
+  * use C as the low level implementation language,
+  * start from the most basic but still usable building block,
+  * stick "recursively" to using this basic block and the
+    representation it espouses throughout the rest of implementation.
+
+Why C? On the face of  it, it may seem severely crude, constraining and
+plain  out-dated.   But  on  the  other  hand  C  offers  portability,
+flexibility of  middle ground  between the "goo"  of assembly  or high
+level choices  of more advanced  ecosystems.  In a way  this principle
+finds  its motivation  in the  evolutionary philosophy...   That  a 40
+year  old  language  survived,  thrived  and doesn't  show  signs  of
+obsolescence is (no) accident... of our digital evolution.
+
+Basic  block presupposes nothing  beyond itself  and three  aspects of
+computation as it has defined  itself: memory storage (it being simple
+C struct), naming references in  the shape of using pointers (but only
+of one, well  two really, kind to the basic  block) and dynamic aspect
+of execution in the shape of containing in each block its one peculiar
+behavior i.e. function taking and  returning a reference to some basic
+block...
+
+The rest  of data structures and  algorithms should "fall  out" in the
+shape  of  this basic  scheme.   Any  further  humanly and  externally
+motivated design  should not influence  or change this  initial choice
+but rather be informed by  its limiting factor, which otherwise we can
+contravene  by architecturing  ad-hoc partial  solutions  of differing
+representation to  a given problem and  only later trying  to fit them
+into the rest  of the design.  Similarly implementing  this way should
+not be considered sub-optimal; for  example basic schema should not be
+aware  of  number  representation   or  machine  architecture  of  the
+underlying system beyond basic  properties of computation or our needs
+to inspect its internal  workings from without. And any considerations
+(as to  the range of possible behaviors,  forms of energy/information
+transfers or  the "shape"  of the  world) we try  to instill  into the
+design should  be hermetically contained in variable  parts build only
+from the forms of the initial "kernel" of representation.
+
+And  The Considerations  start with  the sort  of  geometry artificial
+agents encounter... therefrom comes  the name of Protogenetic Mereology aka
+Gritdagunk.
+
+[1] http://en.wikipedia.org/wiki/Gunk_(mereology)
+[2] http://en.wikipedia.org/wiki/Stanisław_Leśniewski
+
