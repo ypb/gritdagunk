@@ -8,7 +8,6 @@ int main(int argc, char *argv[]) {
   ent_behave(Reality, ent_print);
   ent_extend(Reality, Reality);
   ent_run(Reality);
-  ent_run(Reality);
   return 0;
 }
 

@@ -31,8 +31,8 @@ struct grit {
    */
   struct grit* gunk;
   /*
-	each "brick" manifests itself as more than a mere grit reference by
-	virtue of sustaining some form of activit, whether combinatorial or
+	prop: each "brick" manifests itself as more than a mere grit reference by
+	virtue of sustaining some form of activity, whether combinatorial or
 	"wave"-like, it still remains to be experienced by trying to implement
 	something usuful in this manner; all in all full power of C lies
 	at our disposal... though as argument and return types stand it may be
