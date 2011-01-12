@@ -8,7 +8,16 @@ gunk ent_print(gunk);
 gunk ent_run(gunk);
 
 gunk ent();
-void ent_extend(gunk, gunk);
-void ent_behave(gunk, gunk (*)(gunk));
+
+/* not yet needed but it's a matter of c&p (bah) */
+/* int ent_type(gunk, gunk); */
+
+/* exo-tend? connect? hmmm... */
+int ent_extend(gunk, gunk);
+
+/* supplement? since extend is "atomic"... endo-tend */
+int ent_contain(gunk, gunk);
+
+int ent_behave(gunk, gunk (*)(gunk));
 
 #endif

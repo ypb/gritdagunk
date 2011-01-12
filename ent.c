@@ -33,24 +33,41 @@ gunk ent() {
   return (gunk)malloc(sizeof(struct grit));
 }
 
-void ent_extend(gunk o, gunk with) {
+int ent_extend(gunk o, gunk with) {
   if (o->grit == NULL) {
 	o->grit = with ;
+	return 0;
   } else {
 	log_push("extend");
-	log_indent(); printf("error: refusing to fill non-empty grit\n");
+	log_indent(); printf("error fatal: refusing to fill non-empty grit\n");
 	ent_print(o);
 	log_pop("extend");
+	return -1;
   }
 }
 
-void ent_behave(gunk o, gunk (*like)(gunk)) {
+int ent_contain(gunk o, gunk ent) {
+  if (o->gunk == NULL) {
+	o->gunk = ent ;
+	return 0;
+  } else {
+	log_push("contain");
+	log_indent(); printf("error fatal: refusing to fill non-empty grit\n");
+	ent_print(o);
+	log_pop("contain");
+	return -1;
+  }
+}
+
+int ent_behave(gunk o, gunk (*like)(gunk)) {
   if (o->prop == NULL) {
 	o->prop = like ;
+	return 0;
   } else {
 	log_push("behave");
-	log_indent(); printf("error: refusing to fill non-empty grit\n");
+	log_indent(); printf("error fatal: refusing to fill non-empty grit\n");
 	ent_print(o);
 	log_pop("behave");
+	return -1;
   }
 }
