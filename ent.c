@@ -19,14 +19,19 @@ gunk ent_print(gunk o) {
   return o;
 }
 
-gunk ent_run(gunk o) {
-  gunk r ;
+gunk ent_run(gunk object) {
+  gunk result;
   log_push("run");
-  ent_print(o);
+  ent_print(object);
   log_indent(); printf("...ning:\n");
-  r = (*o->prop)(o);
+  if (object->prop == NULL) {
+	result = object;
+	log_indent(); printf("error major: entity has NULL property,\n");
+  } else {
+	result = (*object->prop)(object);
+  }
   log_pop("run");
-  return r;
+  return result;
 }
 
 gunk ent() {
