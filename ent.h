@@ -6,6 +6,8 @@ typedef struct grit* gunk;
 
 gunk ent_print(gunk);
 gunk ent_run(gunk);
+gunk ent_content(gunk);
+gunk ent_extent(gunk);
 
 gunk ent();
 
